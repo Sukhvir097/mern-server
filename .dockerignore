@@ -1,0 +1,38 @@
+# Node modules - they will be installed inside the container
+node_modules
+
+# Logs
+logs
+*.log
+
+# Environment files - don't copy sensitive info into image
+.env
+.env.*.local
+
+# Git files
+.git
+.gitignore
+
+# Docker config files
+.dockerignore
+docker-compose.yml
+docker-compose.override.yml
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+
+# Test coverage and output
+coverage
+.nyc_output
+
+# Build output
+dist
+build
+
+# Misc
+*.tgz
+npm-debug.log*
+yarn-debug.log*
