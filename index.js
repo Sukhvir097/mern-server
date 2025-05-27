@@ -18,6 +18,9 @@ mongoose.connect(MONGO_URI)
     .catch(err => console.error('MongoDB connection error:', err));
 
 // Use Routes
+app.get('', (req, res) => {
+    res.json("hello");
+})
 app.use('/api/user', userRoutes);
 app.use('/api/contact', contactUser);
 
