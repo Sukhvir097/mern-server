@@ -15,11 +15,11 @@ app.use(express.json());
 // MongoDB Connection
 mongoose.connect(MONGO_URI)
     .then(() => console.log('MongoDB connected'))
-    .catch(err => console.error('MongoDB connection error:', err));
+    .catch(err => console.error('MongoDB connection error :', err));
 
 // Use Routes
-app.use('/api/user', userRoutes);
-app.use('/api/contact', contactUser);
+app.use('/user', userRoutes);
+app.use('/contact', contactUser);
 
 
 // Start Server
