@@ -4,7 +4,7 @@ const User = require('../models/Users');
 const router = express.Router();
 
 // Get all users
-router.get('/', async (req, res) => {
+router.get('/u', async (req, res) => {
   try {
     const u = await User.find();
     res.json(u);

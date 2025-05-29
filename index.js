@@ -22,6 +22,7 @@ app.get('/', (req, res) => {
     res.json("hekko");
 })
 app.use('/user', userRoutes);
+app.use('/contact', contactUser);
 // Use Routes
 app.use('/api/user', userRoutes);
 app.use('/api/contact', contactUser);
