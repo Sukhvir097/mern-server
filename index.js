@@ -18,10 +18,10 @@ mongoose.connect(MONGO_URI)
     .catch(err => console.error('MongoDB connection error :', err));
 
 
-    
+
 // Use Routes
-app.use('/api/user', userRoutes);
-app.use('/api/contact', contactUser);
+app.use('/user', userRoutes);
+app.use('/contact', contactUser);
 
 
 // Start Server
