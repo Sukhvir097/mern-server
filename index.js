@@ -17,9 +17,14 @@ mongoose.connect(MONGO_URI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error :', err));
 
-// Use Routes
+//testing
+app.get('/', (req, res) => {
+    res.json("hekko");
+})
 app.use('/user', userRoutes);
-app.use('/contact', contactUser);
+// Use Routes
+app.use('/api/user', userRoutes);
+app.use('/api/contact', contactUser);
 
 
 // Start Server
